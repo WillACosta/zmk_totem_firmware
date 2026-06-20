@@ -15,6 +15,102 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        tab_combo {
+            bindings = <&kp TAB>;
+            key-positions = <0 1>;
+        };
+
+        ctr_a_combo {
+            bindings = <&kp LC(A)>;
+            key-positions = <10 11>;
+        };
+
+        ctr_b_combo {
+            bindings = <&kp LC(W)>;
+            key-positions = <21 22>;
+        };
+
+        bks_combo {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <8 9>;
+        };
+
+        del_combo {
+            bindings = <&kp DELETE>;
+            key-positions = <18 19>;
+        };
+
+        home_combo {
+            bindings = <&kp HOME>;
+            key-positions = <15 16>;
+        };
+
+        end_combo {
+            bindings = <&kp END>;
+            key-positions = <17 18>;
+        };
+
+        pgup_combo {
+            bindings = <&kp PG_UP>;
+            key-positions = <5 6>;
+        };
+
+        pgdown_combo {
+            bindings = <&kp PAGE_DOWN>;
+            key-positions = <26 27>;
+        };
+    };
+
+    behaviors {
+        hrm_left: hrm_left {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HRM_LEFT";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            require-prior-idle-ms = <100>;
+            flavor = "balanced";
+            hold-trigger-on-release;
+            hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 26 27 28 29 30 31 35 36 37>;
+        };
+
+        hrm_right: hrm_right {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HRM_RIGHT";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            require-prior-idle-ms = <100>;
+            flavor = "balanced";
+            hold-trigger-on-release;
+            hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 25 32 33 34>;
+        };
+
+        ht_mod: ht_mod {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HT_MOD";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <175>;
+            require-prior-idle-ms = <90>;
+            flavor = "balanced";
+            hold-trigger-on-release;
+        };
+
+        td_device: td_device {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_DEVICE";
+            #binding-cells = <0>;
+            bindings = <&mo 1>, <&mo 3>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 

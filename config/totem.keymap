@@ -16,6 +16,18 @@
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
 
+&mmv {
+    time-to-max-speed-ms = <100>;
+    acceleration-exponent = <1>;
+    delay-ms = <0>;
+};
+
+&msc {
+    time-to-max-speed-ms = <100>;
+    acceleration-exponent = <12>;
+    delay-ms = <0>;
+};
+
 / {
     combos {
         compatible = "zmk,combos";
@@ -29,14 +41,14 @@
 
         ctr_a_combo {
             bindings = <&kp LC(A)>;
-            key-positions = <11 10>;
+            key-positions = <11 12>;
             slow-release;
             layers = <0>;
         };
 
         ctr_w_combo {
             bindings = <&kp LC(W)>;
-            key-positions = <21 22>;
+            key-positions = <1 2>;
             slow-release;
             layers = <0>;
         };
@@ -50,9 +62,9 @@
 
         del_combo {
             bindings = <&kp DELETE>;
-            key-positions = <8 9>;
+            key-positions = <18 19>;
             slow-release;
-            layers = <2>;
+            layers = <0>;
         };
 
         home_combo {
@@ -91,12 +103,12 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <245>;
-            require-prior-idle-ms = <125>;
+            tapping-term-ms = <250>;
+            require-prior-idle-ms = <100>;
             flavor = "balanced";
             hold-trigger-on-release;
             hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 26 27 28 29 30 31 35 36 37>;
-            quick-tap-ms = <160>;
+            quick-tap-ms = <150>;
         };
 
         hrm_right: hrm_right {
@@ -105,12 +117,12 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <245>;
-            require-prior-idle-ms = <125>;
+            tapping-term-ms = <250>;
+            require-prior-idle-ms = <100>;
             flavor = "balanced";
             hold-trigger-on-release;
             hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 25 32 33 34>;
-            quick-tap-ms = <160>;
+            quick-tap-ms = <150>;
         };
 
         ht_mod: ht_mod {
@@ -119,7 +131,7 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <215>;
+            tapping-term-ms = <250>;
             require-prior-idle-ms = <100>;
             flavor = "balanced";
         };

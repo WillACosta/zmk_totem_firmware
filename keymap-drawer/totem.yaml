@@ -199,18 +199,18 @@ combos:
 - p: [0, 1]
   k: $$mdi:keyboard-tab$$
   l: [base]
-- p: [11, 10]
+- p: [11, 12]
   k: Ctl+A
   l: [base]
-- p: [21, 22]
+- p: [1, 2]
   k: Ctl+W
   l: [base]
 - p: [8, 9]
   k: $$mdi:backspace$$
   l: [base]
-- p: [8, 9]
+- p: [18, 19]
   k: $$mdi:backspace-reverse$$
-  l: [nav_numb]
+  l: [base]
 - p: [15, 16]
   k: $$mdi:home$$
   l: [base]

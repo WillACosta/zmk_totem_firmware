@@ -77,7 +77,7 @@ layers:
   - {type: trans}
   - {type: trans}
   - {type: trans}
-  - {type: trans}
+  - $$mdi:backspace-reverse$$
   nav_numb:
   - '1'
   - '2'

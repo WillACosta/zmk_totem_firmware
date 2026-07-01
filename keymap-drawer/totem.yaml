@@ -1,0 +1,225 @@
+layout: {zmk_keyboard: totem}
+layers:
+  base:
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - {t: A, h: ⌘}
+  - {t: S, h: ⌥}
+  - {t: D, h: ⌃}
+  - {t: F, h: ⇧}
+  - G
+  - H
+  - {t: J, h: ⇧}
+  - {t: K, h: ⌃}
+  - {t: L, h: ⌥}
+  - {t: ;, h: ⌘}
+  - {t: '$$mdi:keyboard-esc$$', h: ⇧}
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - ''''
+  - {t: ⌘, type: ghost}
+  - '&td_device'
+  - $$mdi:keyboard-space$$
+  - $$mdi:keyboard-return$$
+  - nav_numb
+  - {t: '$$mdi:backspace$$', h: ⌥}
+  symbol:
+  - '!'
+  - '@'
+  - '#'
+  - $
+  - '%'
+  - ^
+  - '&'
+  - '*'
+  - (
+  - )
+  - {type: trans}
+  - /
+  - \
+  - '['
+  - ']'
+  - '-'
+  - '='
+  - '`'
+  - .
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - '?'
+  - '|'
+  - '{'
+  - '}'
+  - _
+  - +
+  - '~'
+  - ','
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - ''
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - $$mdi:backspace-reverse$$
+  nav_numb:
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - F2
+  - F5
+  - {type: trans}
+  - F11
+  - F12
+  - $$mdi:arrow-left$$
+  - $$mdi:arrow-down$$
+  - $$mdi:arrow-up$$
+  - $$mdi:arrow-right$$
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: held}
+  - {type: trans}
+  media:
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - $$mdi:brightness-4$$
+  - $$mdi:brightness-7$$
+  - $$mdi:skip-previous$$
+  - $$mdi:play-pause$$
+  - $$mdi:skip-next$$
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - $$mdi:volume-mute$$
+  - $$mdi:volume-low$$
+  - $$mdi:volume-high$$
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - ''
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  mouse:
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - $$mdi:mouse-move-up$$
+  - $$mdi:mouse-left-click$$
+  - $$mdi:mouse-scroll-wheel$$
+  - $$mdi:mouse-right-click$$
+  - {type: trans}
+  - {t: '$$mdi:bluetooth$$', s: '0'}
+  - {t: '$$mdi:bluetooth$$', s: '1'}
+  - {t: '$$mdi:bluetooth$$', s: '2'}
+  - {t: '$$mdi:bluetooth$$', s: '3'}
+  - {t: '$$mdi:bluetooth$$', s: '4'}
+  - $$mdi:cursor-move$$
+  - $$mdi:cursor-move$$
+  - $$mdi:cursor-move$$
+  - $$mdi:cursor-move$$
+  - {type: trans}
+  - {t: '$$mdi:bluetooth-off$$', type: held}
+  - OUT TOG
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - $$mdi:gesture-swipe-left$$
+  - $$mdi:gesture-swipe-down$$
+  - $$mdi:gesture-swipe-up$$
+  - $$mdi:gesture-swipe-right$$
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - ''
+  - {type: trans}
+  - {type: trans}
+  - {type: held}
+  - {type: trans}
+combos:
+- p: [0, 1]
+  k: $$mdi:keyboard-tab$$
+  l: [base]
+- p: [11, 12]
+  k: Ctl+A
+  l: [base]
+- p: [1, 2]
+  k: Ctl+W
+  l: [base]
+- p: [16, 17]
+  k: $$mdi:backspace$$
+  l: [base]
+- p: [18, 19]
+  k: $$mdi:backspace-reverse$$
+  l: [base]
+- p: [15, 16]
+  k: $$mdi:home$$
+  l: [base]
+- p: [17, 18]
+  k: {t: End, type: ghost}
+  l: [base]
+- p: [5, 6]
+  k: $$mdi:chevron-double-up$$
+  l: [base]
+- p: [26, 27]
+  k: $$mdi:chevron-double-down$$
+  l: [base]

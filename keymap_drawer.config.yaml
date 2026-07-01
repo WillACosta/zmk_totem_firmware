@@ -1,0 +1,171 @@
+draw_config:
+  dark_mode: true
+  n_columns: 1
+  key_rx: 6
+  key_ry: 6
+  footer_text: "TOTEM — 38-key wireless split"
+  glyph_tap_size: 14
+  glyph_hold_size: 11
+  glyph_shifted_size: 10
+  svg_extra_style: |
+    svg.keymap {
+      background: #11101a;
+      fill: #f5f3ff;
+    }
+
+    rect.key {
+      fill: #201b2f;
+    }
+
+    rect.key,
+    rect.combo {
+      stroke: #7c3aed;
+      stroke-width: 1.2;
+    }
+
+    rect.held,
+    rect.combo.held,
+    rect.combo,
+    rect.combo-separate {
+      fill: #4c1d95;
+      stroke: #c084fc;
+    }
+
+    rect.trans {
+      fill: #151320;
+      stroke: #40345f;
+    }
+
+    rect.ghost,
+    rect.combo.ghost {
+      stroke: #a78bfa;
+    }
+
+    text.label,
+    text.footer {
+      fill: #e9d5ff;
+      stroke: #11101a;
+    }
+
+    text.hold,
+    text.shifted,
+    text.left,
+    text.right,
+    text.tl,
+    text.tr,
+    text.bl,
+    text.br,
+    text.combo {
+      fill: #d8b4fe;
+    }
+
+    text.trans {
+      fill: #6d6383;
+    }
+
+    path.combo {
+      stroke: #a78bfa;
+    }
+
+    /* Glyph icon fill inherits from text color */
+    svg.keymap g.key g.glyph path,
+    svg.keymap g.key g.glyph circle,
+    svg.keymap g.key g.glyph rect {
+      fill: #e9d5ff;
+    }
+
+    svg.keymap g.key.held g.glyph path,
+    svg.keymap g.key.held g.glyph circle {
+      fill: #f3e8ff;
+    }
+
+parse_config:
+  trans_legend:
+    t: ""
+    type: trans
+
+  # ---------------------------------------------------------------------------
+  # Raw binding → legend mapping with glyphs
+  # ---------------------------------------------------------------------------
+  raw_binding_map:
+
+    # ── Bluetooth ────────────────────────────────────────────────────────────
+    "&bt BT_CLR":   {t: "$$mdi:bluetooth-off$$", type: held}
+    "&bt BT_SEL 0": {t: "$$mdi:bluetooth$$", s: "0"}
+    "&bt BT_SEL 1": {t: "$$mdi:bluetooth$$", s: "1"}
+    "&bt BT_SEL 2": {t: "$$mdi:bluetooth$$", s: "2"}
+    "&bt BT_SEL 3": {t: "$$mdi:bluetooth$$", s: "3"}
+    "&bt BT_SEL 4": {t: "$$mdi:bluetooth$$", s: "4"}
+
+    # ── Brightness ───────────────────────────────────────────────────────────
+    "&kp C_BRIGHTNESS_INC": "$$mdi:brightness-7$$"
+    "&kp C_BRIGHTNESS_DEC": "$$mdi:brightness-4$$"
+
+    # ── Volume & Media ───────────────────────────────────────────────────────
+    "&kp C_MUTE":       "$$mdi:volume-mute$$"
+    "&kp C_VOL_UP":     "$$mdi:volume-high$$"
+    "&kp C_VOL_DN":     "$$mdi:volume-low$$"
+    "&kp C_VOLUME_UP":  "$$mdi:volume-high$$"
+    "&kp C_VOL_DEC":    "$$mdi:volume-low$$"
+    "&kp K_MUTE":       "$$mdi:volume-mute$$"
+    "&kp C_PREVIOUS":   "$$mdi:skip-previous$$"
+    "&kp C_NEXT":       "$$mdi:skip-next$$"
+    "&kp C_PLAY_PAUSE": "$$mdi:play-pause$$"
+
+    # ── Arrow keys ───────────────────────────────────────────────────────────
+    "&kp LEFT_ARROW":  "$$mdi:arrow-left$$"
+    "&kp RIGHT_ARROW": "$$mdi:arrow-right$$"
+    "&kp UP_ARROW":    "$$mdi:arrow-up$$"
+    "&kp DOWN_ARROW":  "$$mdi:arrow-down$$"
+
+    # ── Navigation ───────────────────────────────────────────────────────────
+    "&kp HOME":      "$$mdi:home$$"
+    "&kp END":       {t: "End", type: ghost}
+    "&kp PG_UP":     "$$mdi:chevron-double-up$$"
+    "&kp PAGE_DOWN": "$$mdi:chevron-double-down$$"
+
+    # ── System / Editing ─────────────────────────────────────────────────────
+    "&kp BACKSPACE": "$$mdi:backspace$$"
+    "&kp DELETE":    "$$mdi:backspace-reverse$$"
+    "&kp TAB":       "$$mdi:keyboard-tab$$"
+    "&kp ESCAPE":    "$$mdi:keyboard-esc$$"
+    "&kp ENTER":     "$$mdi:keyboard-return$$"
+    "&kp SPACE":     "$$mdi:keyboard-space$$"
+
+    # ── Modifiers — Mac style (symbols) ──────────────────────────────────────
+    "&kp LEFT_GUI":     {t: "⌘", type: ghost}
+    "&kp RIGHT_GUI":    {t: "⌘", type: ghost}
+    "&kp LGUI":         {t: "⌘", type: ghost}
+    "&kp LEFT_ALT":     {t: "⌥", type: ghost}
+    "&kp RIGHT_ALT":    {t: "⌥", type: ghost}
+    "&kp LALT":         {t: "⌥", type: ghost}
+    "&kp LEFT_SHIFT":   {t: "⇧", type: ghost}
+    "&kp RIGHT_SHIFT":  {t: "⇧", type: ghost}
+    "&kp LSHIFT":       {t: "⇧", type: ghost}
+    "&kp LEFT_CONTROL": {t: "⌃", type: ghost}
+    "&kp LCTRL":        {t: "⌃", type: ghost}
+
+    # ── Mouse ────────────────────────────────────────────────────────────────
+    "&mkp LCLK":       "$$mdi:mouse-left-click$$"
+    "&mkp RCLK":       "$$mdi:mouse-right-click$$"
+    "&mkp MCLK":       "$$mdi:mouse-scroll-wheel$$"
+    "&mkp MB4":        "$$mdi:mouse-move-up$$"
+    "&mmv MOVE_LEFT":  "$$mdi:cursor-move$$"
+    "&mmv MOVE_RIGHT": "$$mdi:cursor-move$$"
+    "&mmv MOVE_UP":    "$$mdi:cursor-move$$"
+    "&mmv MOVE_DOWN":  "$$mdi:cursor-move$$"
+    "&msc SCRL_LEFT":  "$$mdi:gesture-swipe-left$$"
+    "&msc SCRL_RIGHT": "$$mdi:gesture-swipe-right$$"
+    "&msc SCRL_UP":    "$$mdi:gesture-swipe-up$$"
+    "&msc SCRL_DOWN":  "$$mdi:gesture-swipe-down$$"
+
+    # ── Hold-tap modifier labels (shown in hold position of base layer keys) ──
+    "LEFT_GUI":      "⌘"
+    "LEFT_ALT":      "⌥"
+    "LEFT_SHIFT":    "⇧"
+    "LEFT_CONTROL":  "⌃"
+    "RIGHT_GUI":     "⌘"
+    "RIGHT_ALT":     "⌥"
+    "RIGHT_SHIFT":   "⇧"
+    "RIGHT_CONTROL": "⌃"
+    "ESCAPE":        "$$mdi:keyboard-esc$$"

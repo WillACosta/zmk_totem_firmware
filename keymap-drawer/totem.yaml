@@ -157,7 +157,7 @@ layers:
   - {type: trans}
   - {type: trans}
   mouse:
-  - {type: trans}
+  - {t: '$$mdi:bluetooth-off$$', type: held}
   - {type: trans}
   - {type: trans}
   - {type: trans}
@@ -177,7 +177,7 @@ layers:
   - $$mdi:cursor-move$$
   - $$mdi:cursor-move$$
   - {type: trans}
-  - {t: '$$mdi:bluetooth-off$$', type: held}
+  - {type: trans}
   - OUT TOG
   - {type: trans}
   - {type: trans}
@@ -223,3 +223,5 @@ combos:
 - p: [26, 27]
   k: $$mdi:chevron-double-down$$
   l: [base]
+- p: [10, 11]
+  k: $$mdi:keyboard-esc$$

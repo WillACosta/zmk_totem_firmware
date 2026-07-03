@@ -504,6 +504,10 @@ svg.keymap g.key.held g.glyph circle {
 <rect rx="6" ry="6" x="598" y="159" width="28" height="26" class="combo"/>
 <use href="#mdi:chevron-double-down" xlink:href="#mdi:chevron-double-down" x="605" y="165" height="14" width="14.0" class="combo tap glyph mdi:chevron-double-down"/>
 </g>
+<g class="combo combopos-9">
+<rect rx="6" ry="6" x="97" y="130" width="28" height="26" class="combo"/>
+<use href="#mdi:keyboard-esc" xlink:href="#mdi:keyboard-esc" x="104" y="136" height="14" width="14.0" class="combo tap glyph mdi:keyboard-esc"/>
+</g>
 </g>
 </g>
 <g transform="translate(30, 365)" class="layer-symbol">
@@ -650,6 +654,10 @@ svg.keymap g.key.held g.glyph circle {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <use href="#mdi:backspace-reverse" xlink:href="#mdi:backspace-reverse" x="-7" y="-7" height="14" width="14.0" class="key tap glyph mdi:backspace-reverse"/>
 </g>
+<g class="combo combopos-0">
+<rect rx="6" ry="6" x="97" y="130" width="28" height="26" class="combo"/>
+<use href="#mdi:keyboard-esc" xlink:href="#mdi:keyboard-esc" x="104" y="136" height="14" width="14.0" class="combo tap glyph mdi:keyboard-esc"/>
+</g>
 </g>
 </g>
 <g transform="translate(30, 729)" class="layer-nav_numb">
@@ -787,6 +795,10 @@ svg.keymap g.key.held g.glyph circle {
 <g transform="translate(656, 236)" class="key trans keypos-37">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 </g>
+<g class="combo combopos-0">
+<rect rx="6" ry="6" x="97" y="130" width="28" height="26" class="combo"/>
+<use href="#mdi:keyboard-esc" xlink:href="#mdi:keyboard-esc" x="104" y="136" height="14" width="14.0" class="combo tap glyph mdi:keyboard-esc"/>
+</g>
 </g>
 </g>
 <g transform="translate(30, 1094)" class="layer-media">
@@ -914,13 +926,18 @@ svg.keymap g.key.held g.glyph circle {
 <g transform="translate(656, 236)" class="key trans keypos-37">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 </g>
+<g class="combo combopos-0">
+<rect rx="6" ry="6" x="97" y="130" width="28" height="26" class="combo"/>
+<use href="#mdi:keyboard-esc" xlink:href="#mdi:keyboard-esc" x="104" y="136" height="14" width="14.0" class="combo tap glyph mdi:keyboard-esc"/>
+</g>
 </g>
 </g>
 <g transform="translate(30, 1459)" class="layer-mouse">
 <text x="0" y="28" class="label" id="mouse">mouse:</text>
 <g transform="translate(0, 56)">
-<g transform="translate(73, 113) rotate(-10.0)" class="key trans keypos-0">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
+<g transform="translate(73, 113) rotate(-10.0)" class="key held keypos-0">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held"/>
+<use href="#mdi:bluetooth-off" xlink:href="#mdi:bluetooth-off" x="-7" y="-7" height="14" width="14.0" class="key held tap glyph mdi:bluetooth-off"/>
 </g>
 <g transform="translate(137, 62) rotate(-4.0)" class="key trans keypos-1">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
@@ -997,9 +1014,8 @@ svg.keymap g.key.held g.glyph circle {
 <g transform="translate(814, 168) rotate(10.0)" class="key trans keypos-19">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 </g>
-<g transform="translate(32, 209) rotate(-10.0)" class="key held keypos-20">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held"/>
-<use href="#mdi:bluetooth-off" xlink:href="#mdi:bluetooth-off" x="-7" y="-7" height="14" width="14.0" class="key held tap glyph mdi:bluetooth-off"/>
+<g transform="translate(32, 209) rotate(-10.0)" class="key trans keypos-20">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 </g>
 <g transform="translate(92, 223) rotate(-10.0)" class="key keypos-21">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -1058,6 +1074,10 @@ svg.keymap g.key.held g.glyph circle {
 </g>
 <g transform="translate(656, 236)" class="key trans keypos-37">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
+</g>
+<g class="combo combopos-0">
+<rect rx="6" ry="6" x="97" y="130" width="28" height="26" class="combo"/>
+<use href="#mdi:keyboard-esc" xlink:href="#mdi:keyboard-esc" x="104" y="136" height="14" width="14.0" class="combo tap glyph mdi:keyboard-esc"/>
 </g>
 </g>
 </g>

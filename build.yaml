@@ -24,5 +24,6 @@ include:
 
   - board: xiao_ble//zmk
     shield: totem_right
+    cmake-args: -DCONFIG_ZMK_STATUS_ADVERTISEMENT=n
 
 # there is no settingsreset (needed) for the XIA

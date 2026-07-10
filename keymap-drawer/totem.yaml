@@ -11,7 +11,7 @@ layers:
   - I
   - O
   - P
-  - A
+  - {t: A, h: ⌘}
   - {t: S, h: ⌥}
   - {t: D, h: ⌃}
   - {t: F, h: ⇧}
@@ -20,7 +20,7 @@ layers:
   - {t: J, h: ⇧}
   - {t: K, h: ⌃}
   - {t: L, h: ⌥}
-  - ;
+  - {t: ;, h: ⌘}
   - {t: '$$mdi:keyboard-esc$$', h: ⇧}
   - Z
   - X
@@ -77,7 +77,7 @@ layers:
   - {type: trans}
   - {type: trans}
   - {type: trans}
-  - {type: trans}
+  - $$mdi:backspace-reverse$$
   nav_numb:
   - '1'
   - '2'
@@ -157,7 +157,7 @@ layers:
   - {type: trans}
   - {type: trans}
   mouse:
-  - {type: trans}
+  - {t: '$$mdi:bluetooth-off$$', type: held}
   - {type: trans}
   - {type: trans}
   - {type: trans}
@@ -177,7 +177,7 @@ layers:
   - $$mdi:cursor-move$$
   - $$mdi:cursor-move$$
   - {type: trans}
-  - {t: '$$mdi:bluetooth-off$$', type: held}
+  - {type: trans}
   - OUT TOG
   - {type: trans}
   - {type: trans}
@@ -199,18 +199,18 @@ combos:
 - p: [0, 1]
   k: $$mdi:keyboard-tab$$
   l: [base]
-- p: [11, 10]
+- p: [11, 12]
   k: Ctl+A
   l: [base]
-- p: [21, 22]
+- p: [1, 2]
   k: Ctl+W
   l: [base]
-- p: [8, 9]
+- p: [16, 17]
   k: $$mdi:backspace$$
   l: [base]
-- p: [8, 9]
+- p: [18, 19]
   k: $$mdi:backspace-reverse$$
-  l: [nav_numb]
+  l: [base]
 - p: [15, 16]
   k: $$mdi:home$$
   l: [base]
@@ -223,3 +223,5 @@ combos:
 - p: [26, 27]
   k: $$mdi:chevron-double-down$$
   l: [base]
+- p: [10, 11]
+  k: $$mdi:keyboard-esc$$

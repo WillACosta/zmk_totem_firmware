@@ -17,9 +17,8 @@ manifest:
       path: modules/prospector-zmk-module
 
     - name: zmk-rgbled-widget
-      remote: willACosta
+      url: https://github.com/caksoylar/zmk-rgbled-widget
       revision: main
-      path: modules/zmk-rgbled-widget
 
   self:
     path: config

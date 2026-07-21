@@ -158,8 +158,8 @@ layers:
   - {type: trans}
   mouse:
   - {t: '$$mdi:bluetooth-off$$', type: held}
-  - {type: trans}
-  - {type: trans}
+  - '&ind_bat'
+  - '&ind_con'
   - {type: trans}
   - {type: trans}
   - $$mdi:mouse-move-up$$
